@@ -20,8 +20,19 @@
 }
 ```
 
+## Install 
+NPM: 
+   ```sh 
+   npm i postcss-content-entity
+   ```
+Yarn: 
+   ```sh 
+   yarn add postcss-content-entity
+   ```
 ## Usage
 
+
+and use it with post css
 ```js
 postcss([ require('postcss-content-entity') ])
 ```
