@@ -17,7 +17,7 @@ module.exports = postcss.plugin('test', function test() {
                         return getHtmlEntityCssCode(entity);
                     });
                 }
-            })
+            });
         });
-    }
+    };
 });
