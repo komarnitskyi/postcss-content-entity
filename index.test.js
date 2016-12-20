@@ -11,6 +11,17 @@ function run(input, output, opts) {
         });
 }
 
+it('Should work correct with combined entity', () => {
+    return run('a:before{content: "&times;trimer;"}',
+        'a:before{content: "\\d7trimer;"}',
+        {});
+});
+it('Should work correct with wrong entities', () => {
+    return run('a:before{content: "&trimer;"}',
+        'a:before{content: "&trimer;"}',
+        {});
+});
+
 it('Should not make any changes if content have no entities', () => {
     return run('a:before{content: "Email: "}',
         'a:before{content: "Email: "}',

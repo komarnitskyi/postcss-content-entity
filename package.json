@@ -1,6 +1,6 @@
 {
   "name": "postcss-content-entity",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "PostCSS plugin that allows to use html entities inside css content property",
   "keywords": [
     "postcss",
