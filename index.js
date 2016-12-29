@@ -9,7 +9,7 @@ const getHtmlEntityCssCode = function (entity) {
     return '\\' + char.charCodeAt(0).toString(16);
 };
 
-module.exports = postcss.plugin('test', function test() {
+module.exports = postcss.plugin('postcss-content-entity', function postcssContentEntity() {
     return function (css) {
         css.walkRules(function (rule) {
             rule.walkDecls(function (decl) {
